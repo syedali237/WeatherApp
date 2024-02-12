@@ -12,7 +12,8 @@ import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 
 function WeatherApp() {
-  let apiKey = "4cc02fed51059e6453a582fc30193723";
+  
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const [city, setCity] = useState("");
   const [humidity, setHumidity] = useState("");
